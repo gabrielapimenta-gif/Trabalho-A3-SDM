@@ -4,7 +4,7 @@ from database import db
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///consultas.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data/consultas.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db.init_app(app)
